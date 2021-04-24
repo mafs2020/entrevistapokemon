@@ -1,0 +1,45 @@
+.card-title{ 
+    background-color: dimgrey;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.imagenes{
+    object-fit: unset;
+    margin: auto;
+    width: 100%;
+    display: block;
+}
+
+.card-footer{
+    padding: 20px;
+    background-color: skyblue;
+}
+
+.btn {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    margin: auto;
+    outline: none;
+}
+.success {
+    border-color: #4CAF50;
+    color: green;
+    border-radius: 10px;
+    outline: none;
+    &:hover{
+        color: #fff;
+        background-color: green;
+        border-color: #fff;
+        outline: none;
+        border: none;
+    }
+}

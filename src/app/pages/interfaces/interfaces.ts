@@ -7,7 +7,7 @@ export interface IPokemonResponse{
 };
 
 export interface IPokemon{
-    id: number;
-    name: string;
-    img: string;
+    id?: number;
+    name?: string;
+    img?: string;
 };

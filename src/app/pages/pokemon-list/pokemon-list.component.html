@@ -1,9 +1,9 @@
 <main>
     <section>
         <div class="card" *ngFor="let pokemon of pokemones">
-            <p> {{ pokemon.name }} </p>
-            <img [src]="pokemon.img" [alt]="pokemon.name" srcset="">
+            <app-pokemon [pokemon]="pokemon"></app-pokemon>
         </div>
-        <button (click)="siguiente()">mas</button>
     </section>
+    <button (click)="regresar()">regresar</button>
+    <button (click)="siguiente()">siguientes</button>
 </main>
