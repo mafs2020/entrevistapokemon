@@ -1,1 +1,6 @@
-<p>favoritos works!</p>
+
+<section *ngIf="pokemones">
+    <div class="card" *ngFor="let pokemon of pokemones">
+        <app-pokemon [pokemon]="pokemon"></app-pokemon>
+    </div>
+</section>

@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { IPokemon } from '../interfaces/interfaces';
+import { PokemonService } from '../services/pokemon.service';
 
 @Component({
   selector: 'app-pokemon',
@@ -8,12 +9,16 @@ import { IPokemon } from '../interfaces/interfaces';
 })
 export class PokemonComponent implements OnInit {
   @Input()pokemon: IPokemon;
-  constructor() { }
+  constructor(private pokemonServices: PokemonService) { }
 
   ngOnInit(): void {}
 
   errorImage(): void {
     this.pokemon.img = 'assets/img/no-image.png';
+  }
+
+  agregar(){
+    this.pokemonServices.favoritos(this.pokemon);
   }
 
 }

@@ -2,21 +2,24 @@
     background-color: dimgrey;
     color: #fff;
     text-align: center;
-    padding: 15px;
+    padding: 30px;
+    // overflow: hidden;
     font-size: 1.5rem;
     text-transform: uppercase;
-}
+    position: relative;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+};
 
 .imagenes{
     object-fit: unset;
-    margin: auto;
     width: 100%;
     display: block;
 }
 
 .card-footer{
     padding: 20px;
-    background-color: skyblue;
+    // background-color: skyblue;
 }
 
 .btn {
@@ -42,4 +45,27 @@
         outline: none;
         border: none;
     }
+}
+
+.accion{
+    width: 50px;
+    height: 50px;
+    background-color: dimgrey;
+    position: absolute;
+    top: -18px;
+    right: -10px;
+    border-radius: 50%;
+}
+.accion p{
+    // margin: auto;
+    font-size: 2rem;
+    display: block;
+}
+
+.card-footer{
+    background-color: dimgrey;
+}
+
+.d{
+    position: relative;
 }

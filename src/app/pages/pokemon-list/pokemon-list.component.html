@@ -1,9 +1,9 @@
-<main>
-    <section>
-        <div class="card" *ngFor="let pokemon of pokemones">
-            <app-pokemon [pokemon]="pokemon"></app-pokemon>
-        </div>
-    </section>
-    <button (click)="regresar()">regresar</button>
-    <button (click)="siguiente()">siguientes</button>
-</main>
+
+<section>
+    <div class="card" *ngFor="let pokemon of pokemones">
+        <app-pokemon [pokemon]="pokemon"></app-pokemon>
+    </div>
+</section>
+<button (click)="regresar()">regresar</button>
+<button (click)="siguiente()">siguientes</button>
+
