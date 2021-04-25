@@ -9,12 +9,10 @@ section{
 
 .card{
     width: 23%;
-    // height: 340px;
-    margin: 1.5rem auto 0;
+    margin: 1.5rem auto 20px;
     border: 1px solid silver;
-    background-color: silver;
-    border-radius: 5px;
-    // overflow: hidden;
+    border-radius: 10px;
+    position: relative;
     &:hover{
         cursor: pointer;
         box-shadow: 0 0 15px rgb(43, 39, 39);

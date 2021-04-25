@@ -1,7 +1,8 @@
 <div>
-    <div class="accion"><p>+</p></div>
-    <div (click)="imprimir()">
-        <div><img class="imagenes" [src]="pokemon.img" [alt]="pokemon.name" (error)="errorImage()"></div>
+    <div *ngIf="guardarInput" (click)="guardar()" class="accion"><p>+</p></div>
+    <div *ngIf="!guardarInput" (click)="guardar()" class="accion"><p>x</p></div>
+    <div>
+        <div><img class="imagenes" loading="lazy" [src]="pokemon.img" [alt]="pokemon.name" (error)="errorImage()"></div>
         <div class="card-title">
             <p> {{ pokemon.name }} </p>
             <!-- <button class="btn success">Agregar</button> -->
