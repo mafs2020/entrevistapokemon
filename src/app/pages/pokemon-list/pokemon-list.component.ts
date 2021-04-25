@@ -60,8 +60,8 @@ export class PokemonListComponent implements OnInit {
       })).subscribe();
   }
 
+  // se agrega la imagen
   obtenerPokemonsCorrectos(results: any): void {
-
     this.pokemones = results.map((pokemon: any) => {
       const id = pokemon.url.split('/')[6];
       // console.log('id :>> ', id);
@@ -74,13 +74,3 @@ export class PokemonListComponent implements OnInit {
   }
 
 }
-
-
-// this.pokemones = results.map((pokemon: any) => {
-//   const id = pokemon.url.split('/')[6];
-//   console.log('id :>> ', id);
-//   const urlImg = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
-//   // const urlImg = `https://pokeres.bastionbot.org/images/pokemon/${id}.png`;
-//   const pokemonImg: IPokemon = { id, name: pokemon.name, img: urlImg };
-//   return pokemonImg;
-// });

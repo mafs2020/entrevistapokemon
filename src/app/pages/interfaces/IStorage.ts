@@ -1,5 +1,8 @@
+import { IPokemon } from './interfaces';
+
 export interface IStorage {
     get(key: string): string;
-    add(data: string): void;
-    delete(key: string): void;
+    add(data: IPokemon): void;
+    delete(key: number): void;
+    deleteAll(key: string): void;
 }

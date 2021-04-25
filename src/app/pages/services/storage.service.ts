@@ -1,25 +1,41 @@
 import { Injectable } from '@angular/core';
+import { IPokemon } from '../interfaces/interfaces';
 import { IStorage } from '../interfaces/IStorage';
 
-type ValidStorage = 'pokemon' | 'user';
+type ValidStorage = 'pokemon';
 
 @Injectable({
   providedIn: 'root'
 })
 export class StorageService implements IStorage {
-
+  pokemonesLocal: IPokemon[] = [];
   constructor() { }
 
   get<T>(key: ValidStorage): T {
-    const data = JSON.parse(localStorage.getItem(key));
-    return data;
+    return JSON.parse(localStorage.getItem(key));
   }
 
-  add(data: ValidStorage): void {
-    throw new Error('Method not implemented.');
+  add(pokemon: IPokemon): void {
+    this.pokemonesLocal.push(pokemon);
+    const pokemons: IPokemon[] =
+      JSON.parse(localStorage.getItem('pokemon')) || [];
+
+    if (pokemons.length) {
+      this.pokemonesLocal = [...pokemons, pokemon];
+    }
+    localStorage.setItem('pokemon', JSON.stringify(this.pokemonesLocal));
   }
 
-  delete(key: ValidStorage): void {
-    throw new Error('Method not implemented.');
+  delete(id: number): void {
+    const arrayPokemons: IPokemon[] = JSON.parse(localStorage.getItem('pokemon'));
+    // eslint-disable-next-line eqeqeq
+    const newarrayPokemons = arrayPokemons.filter(pokemon => pokemon.id != id);
+    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
+    localStorage.setItem('pokemon', JSON.stringify(newarrayPokemons));
+
+  }
+
+  deleteAll(key: ValidStorage): void {
+    localStorage.removeItem(key);
   }
 }

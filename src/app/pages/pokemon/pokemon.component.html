@@ -1,6 +1,8 @@
 <div>
-    <div *ngIf="guardarInput" (click)="guardar()" class="accion"><p>+</p></div>
-    <div *ngIf="!guardarInput" (click)="guardar()" class="accion"><p>x</p></div>
+    <div *ngIf="guardarInput" (click)="guardar()" class="accion"><p><i class="fas fa-plus fa-xs"></i></p></div>
+    <div *ngIf="!guardarInput" (click)="eliminar()" class="accion btn-eliminar"><p><i class="fas fa-trash-alt fa-xs"></i></p></div>
+    <!-- TODO cambiar funcion -->
+    <!-- <div (click)="guardar()" [ngClass]="'accion'"><p><i class="fas fa-star fa-xs"></i></p></div> -->
     <div>
         <div><img class="imagenes" loading="lazy" [src]="pokemon.img" [alt]="pokemon.name" (error)="errorImage()"></div>
         <div class="card-title">

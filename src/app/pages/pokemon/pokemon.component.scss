@@ -11,6 +11,9 @@
     // position: relative;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    &:hover{
+        border: none
+    }
 };
 
 .card-title p{
@@ -22,6 +25,10 @@
     width: 100%;
     display: block;
     margin: 13px 0;
+    transition: all 0.8 ease-in;
+    &:hover{
+        transform: scale(1.2);
+    }
 }
 
 .card-footer{
@@ -68,4 +75,13 @@
 
 .card-footer{
     background-color: dimgrey;
+}
+
+.fas{
+    font-size: 20px;
+}
+
+.btn-eliminar:hover{
+    background-color: #fff;
+    color: #194350;
 }

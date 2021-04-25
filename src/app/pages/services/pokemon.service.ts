@@ -30,9 +30,6 @@ export class PokemonService {
     if (pokemons.length) {
       this.pokemonesLocal = [...pokemons, pokemon];
     }
-
     localStorage.setItem('pokemon', JSON.stringify(this.pokemonesLocal));
-    // this.favoritosArray$.next(pokemon);
-    // this.favoritosArrayAction.subscribe(data => console.log(data));
   }
 }

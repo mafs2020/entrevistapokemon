@@ -1,6 +1,9 @@
 
-<section *ngIf="pokemones">
-    <div class="card" *ngFor="let pokemon of pokemones">
-        <app-pokemon [pokemon]="pokemon" [guardarInput]="false"></app-pokemon>
-    </div>
+<section>
+    <ng-container *ngIf="pokemones.length; else elseBlock">
+        <div class="card" *ngFor="let pokemon of pokemones">
+            <app-pokemon [pokemon]="pokemon" [guardarInput]="false"></app-pokemon>
+        </div>
+    </ng-container>
+    <ng-template #elseBlock> <div class="no-results"> <p>Content to render when condition is false.</p> </div> </ng-template>
 </section>
