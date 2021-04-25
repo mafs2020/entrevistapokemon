@@ -7,6 +7,8 @@ import { of } from 'rxjs';
 import { PokemonService } from '../services/pokemon.service';
 
 import { IPokemon } from '../interfaces/interfaces';
+import { ToasterService } from 'angular2-toaster';
+import { ToastrService } from 'ngx-toastr';
 
 
 @Component({
@@ -18,10 +20,11 @@ export class PokemonListComponent implements OnInit {
   pokemones: IPokemon[] = [];
   offset: number = 0;
 
-  constructor(private pokemonServices: PokemonService) { }
+  constructor(private pokemonServices: PokemonService, private toastr: ToastrService) {}
 
   ngOnInit(): void {
     this.getPokemon();
+    this.toastr.success('Hello world!', 'Toastr fun!');
   }
 
   getPokemon(): void {

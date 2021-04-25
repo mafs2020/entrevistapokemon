@@ -13,6 +13,7 @@ import { PokemonComponent } from './pokemon/pokemon.component';
 
 import { PokemonPipe } from './pipes/pokemon.pipe';
 
+
 @NgModule({
   declarations: [
     PokemonListComponent,
@@ -24,7 +25,7 @@ import { PokemonPipe } from './pipes/pokemon.pipe';
   ],
   imports: [
     CommonModule,
-    rutasPageModule,
+    rutasPageModule
   ]
 })
 
