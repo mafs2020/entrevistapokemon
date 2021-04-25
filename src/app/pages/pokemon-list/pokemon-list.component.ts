@@ -43,4 +43,5 @@ export class PokemonListComponent implements OnInit {
       this.pokemones = resp.results;
     });
   }
+
 }

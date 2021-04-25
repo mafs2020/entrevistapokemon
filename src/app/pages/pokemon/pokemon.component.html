@@ -1,6 +1,15 @@
-<div class="card-title">
+<div>
+    <div class="accion"><p>+</p></div>
+    <div (click)="imprimir()">
+        <div><img class="imagenes" [src]="pokemon.img" [alt]="pokemon.name" (error)="errorImage()"></div>
+        <div class="card-title">
+            <p> {{ pokemon.name }} </p>
+            <!-- <button class="btn success">Agregar</button> -->
+        </div>
+    </div>
+</div>
+<!-- <div class="card-title">
     <div class="accion"><p>+</p></div>
     <p> {{ pokemon.name }} </p>
 </div>
-<div><img class="imagenes" [src]="pokemon.img" [alt]="pokemon.name" (error)="errorImage()"></div>
-<div class="card-footer"><button class="btn success" (click)="agregar()">Agregar</button></div>
+<div class="card-footer"><button class="btn success" (click)="agregar()">Agregar</button></div> -->

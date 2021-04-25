@@ -1,7 +1,7 @@
 .header{
     height: 4.5rem;
     width: 100%;
-    background-color: #fff;
+    background-color: #194350;
     box-shadow: 1px 6px 16px #000;
 }
 nav{
@@ -17,8 +17,10 @@ ul a{
     margin-right: 24px;
     text-decoration: none;
     font-size: 2rem;
+    text-transform: uppercase;
     height: 100%;
     padding: 18px 5px;
+    color: #fff;
     &:hover{
         background-color: dimgrey;
         color: #fff;

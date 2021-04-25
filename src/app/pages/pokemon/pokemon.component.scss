@@ -2,15 +2,21 @@
     background-color: dimgrey;
     color: #fff;
     text-align: center;
-    padding: 30px;
-    // overflow: hidden;
-    font-size: 1.5rem;
+    padding: 40px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-size: 1rem;
     text-transform: uppercase;
-    position: relative;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    // position: relative;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 };
 
+.card-title p{
+    display: block;
+    text-align: center;
+}
 .imagenes{
     object-fit: unset;
     width: 100%;
@@ -22,22 +28,13 @@
     // background-color: skyblue;
 }
 
-.btn {
-    border: 2px solid black;
-    background-color: white;
-    color: black;
-    padding: 14px 28px;
-    display: block;
-    font-size: 16px;
-    cursor: pointer;
-    margin: auto;
-    outline: none;
-}
+
 .success {
     border-color: #4CAF50;
-    color: green;
+    color: #fff;
     border-radius: 10px;
     outline: none;
+    background-color: #194350;
     &:hover{
         color: #fff;
         background-color: green;
@@ -50,22 +47,22 @@
 .accion{
     width: 50px;
     height: 50px;
-    background-color: dimgrey;
+    background-color: #194350;
     position: absolute;
-    top: -18px;
-    right: -10px;
+    top: -15px;
+    color: #fff;
+    right: -16px;
     border-radius: 50%;
+    &:hover{
+        box-shadow: 0 3px 15px dimgrey;
+    }
 }
 .accion p{
-    // margin: auto;
+    margin: 6px 1px 0px 18px;
     font-size: 2rem;
     display: block;
 }
 
 .card-footer{
     background-color: dimgrey;
-}
-
-.d{
-    position: relative;
 }

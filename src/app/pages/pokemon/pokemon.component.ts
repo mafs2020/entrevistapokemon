@@ -21,4 +21,8 @@ export class PokemonComponent implements OnInit {
     this.pokemonServices.favoritos(this.pokemon);
   }
 
+  imprimir(){
+    console.log('guason');
+  }
+
 }

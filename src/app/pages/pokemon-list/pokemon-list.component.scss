@@ -1,7 +1,6 @@
 section{
     margin-top: 1.5rem;
     margin-left: 1.5rem;
-    // background-color: firebrick;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -9,14 +8,26 @@ section{
 
 .card{
     width: 23%;
-    // height: 340px;
-    margin: 1.5rem auto 0;
+    margin: 1.5rem auto 20px;
     border: 1px solid silver;
-    background-color: silver;
-    border-radius: 5px;
-    // overflow: hidden;
+    border-radius: 10px;
+    position: relative;
     &:hover{
         cursor: pointer;
         box-shadow: 0 0 15px rgb(43, 39, 39);
     }
+}
+
+.boton{
+    background-color: #194350;
+    color: #fff;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    width: 100%;
 }
