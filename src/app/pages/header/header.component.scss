@@ -1,13 +1,16 @@
 .header{
     height: 4.5rem;
     width: 100%;
+    display: flex;
     background-color: #194350;
     box-shadow: 1px 4px 16px #194350;
+    flex-direction: row;
+    align-items: center;
 }
 nav{
-    width: 100%;
+    width: 97%;
     height: 100%;
-    display: block;
+    // display: block;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -26,4 +29,10 @@ ul a{
         color: #fff;
         cursor: pointer;
     }
+}
+
+.img{
+    height:70px;
+    // width: 100px;
+    // display: block;
 }

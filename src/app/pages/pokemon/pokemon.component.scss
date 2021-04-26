@@ -61,16 +61,15 @@
     color: #fff;
     right: -16px;
     border-radius: 50%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &:hover{
         box-shadow: 0 3px 15px dimgrey;
         color: #194350;
         background-color: #fff;
     }
-}
-.accion p{
-    margin: 6px 1px 0px 18px;
-    font-size: 2rem;
-    display: block;
 }
 
 .card-footer{

@@ -22,7 +22,7 @@ import { rutasPadreModule } from './app.routes';
     BrowserAnimationsModule,
     // ToasterModule.forRoot()
     // BrowserAnimationsModule, // required animations module
-    ToastrModule.forRoot()
+    ToastrModule.forRoot({autoDismiss:true, closeButton: true, easing: 'ease-in-out'})
   ],
   providers: [],
   bootstrap: [AppComponent]

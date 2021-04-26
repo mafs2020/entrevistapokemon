@@ -22,3 +22,16 @@ body{
     margin-top: 8px;
     outline: none;
 }
+
+@media screen and (max-width: 420px) {
+    section{
+        margin-top: 1.5rem;
+        margin-left: 1.5rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    .card{
+        width: 40%;
+    }
+}

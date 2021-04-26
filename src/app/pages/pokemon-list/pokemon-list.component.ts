@@ -9,58 +9,67 @@ import { PokemonService } from '../services/pokemon.service';
 import { IPokemon } from '../interfaces/interfaces';
 import { ToasterService } from 'angular2-toaster';
 import { ToastrService } from 'ngx-toastr';
-
+import { StorageService } from '../services/storage.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pokemon-list',
   templateUrl: './pokemon-list.component.html',
-  styleUrls: ['./pokemon-list.component.scss']
+  styleUrls: ['./pokemon-list.component.scss'],
 })
 export class PokemonListComponent implements OnInit {
   pokemones: IPokemon[] = [];
   offset: number = 0;
 
-  constructor(private pokemonServices: PokemonService, private toastr: ToastrService) {}
+  constructor(
+    private pokemonServices: PokemonService,
+    private toastr: ToastrService,
+  ) {}
 
   ngOnInit(): void {
     this.getPokemon();
-    this.toastr.success('Hello world!', 'Toastr fun!');
   }
 
   getPokemon(): void {
-    this.pokemonServices.getAllPokemos()
-    .pipe(
-      tap(({results}) => this.obtenerPokemonsCorrectos(results)),
-      catchError(error => {
-        // TODO: Add toast
-        console.log();
-        return of(error);
-      })
-    )
-    .subscribe();
+    this.pokemonServices
+      .getAllPokemos()
+      .pipe(
+        tap(({ results }) => this.obtenerPokemonsCorrectos(results)),
+        catchError((error) => {
+          this.toastr.error('ocurrio un error al cargar', 'ERROR');
+          return of(error);
+        })
+      )
+      .subscribe();
   }
 
   // todo verificar el next
   siguiente(): void {
     const offset = 20 * ++this.offset;
-    this.pokemonServices.getAllPokemos(offset)
-    .pipe(tap(({ results }) => this.obtenerPokemonsCorrectos(results))).subscribe();
+    this.pokemonServices
+      .getAllPokemos(offset)
+      .pipe(tap(({ results }) => this.obtenerPokemonsCorrectos(results)))
+      .subscribe();
   }
 
   // todo verificar el next
   regresar(): void {
     this.offset = --this.offset;
-    if(this.offset <= 0){
+    if (this.offset <= 0) {
       return;
     }
     const offset = 20 * this.offset;
-    this.pokemonServices.getAllPokemos(offset).pipe(
-      tap(({results}) => this.obtenerPokemonsCorrectos(results)),
-      catchError(error => {
-        // TODO: Add toast
-        console.log();
-        return of(error);
-      })).subscribe();
+    this.pokemonServices
+      .getAllPokemos(offset)
+      .pipe(
+        tap(({ results }) => this.obtenerPokemonsCorrectos(results)),
+        catchError((error) => {
+          // TODO: Add toast
+          console.log();
+          return of(error);
+        })
+      )
+      .subscribe();
   }
 
   // se agrega la imagen
@@ -73,7 +82,6 @@ export class PokemonListComponent implements OnInit {
       const pokemonImg: IPokemon = { id, name: pokemon.name, img: urlImg };
       return pokemonImg;
     });
-
   }
 
 }
