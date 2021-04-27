@@ -20,7 +20,6 @@ import { Router } from '@angular/router';
 export class PokemonListComponent implements OnInit {
   pokemones: IPokemon[] = [];
   offset: number = 0;
-
   constructor(
     private pokemonServices: PokemonService,
     private toastr: ToastrService,
@@ -48,8 +47,13 @@ export class PokemonListComponent implements OnInit {
     const offset = 20 * ++this.offset;
     this.pokemonServices
       .getAllPokemos(offset)
-      .pipe(tap(({ results }) => this.obtenerPokemonsCorrectos(results)))
-      .subscribe();
+      .pipe(
+        tap(({ results }) => this.obtenerPokemonsCorrectos(results)),
+        catchError((error) => {
+          this.toastr.error('ocurrio un error al cargar', 'ERROR');
+          return of(error);
+        })
+      ).subscribe();
   }
 
   // todo verificar el next
@@ -64,12 +68,10 @@ export class PokemonListComponent implements OnInit {
       .pipe(
         tap(({ results }) => this.obtenerPokemonsCorrectos(results)),
         catchError((error) => {
-          // TODO: Add toast
-          console.log();
+          this.toastr.error('ocurrio un error al cargar', 'ERROR');
           return of(error);
         })
-      )
-      .subscribe();
+      ).subscribe();
   }
 
   // se agrega la imagen

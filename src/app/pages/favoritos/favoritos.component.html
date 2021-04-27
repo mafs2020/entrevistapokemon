@@ -2,8 +2,11 @@
 <section>
     <ng-container *ngIf="pokemones.length; else elseBlock">
         <div class="card" *ngFor="let pokemon of pokemones">
-            <app-pokemon [pokemon]="pokemon" [guardarInput]="false"></app-pokemon>
+            <app-pokemon [pokemon]="pokemon" [guardarInput]="false" (pokemonE)="recibe($event)"></app-pokemon>
         </div>
     </ng-container>
-    <ng-template #elseBlock> <div class="no-results"> <p>Content to render when condition is false.</p> </div> </ng-template>
+    <ng-template #elseBlock>
+        <div class="no-results bordeIzquierdo"><p>No tienes pokemones Favoritos</p></div>
+        <img class="imagenSvg" src="assets/img/nada.svg" alt="" />
+    </ng-template>
 </section>

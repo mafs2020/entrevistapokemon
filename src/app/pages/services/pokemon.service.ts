@@ -10,8 +10,6 @@ import { environment } from '../.././../environments/environment';
   providedIn: 'root',
 })
 export class PokemonService {
-  private favoritosArray$: Subject<IPokemon> = new Subject<IPokemon>();
-  favoritosArrayAction = this.favoritosArray$.asObservable();
   pokemonesLocal: IPokemon[] = [];
 
   constructor(private http: HttpClient) { }

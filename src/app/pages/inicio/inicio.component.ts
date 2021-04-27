@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Event, NavigationEnd, Router, RouterEvent } from '@angular/router';
+import { tap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-inicio',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+    this.router.events
+      .pipe(
+        tap((event: RouterEvent) => {
+          if(event instanceof NavigationEnd) {
+            console.log('event instanceof NavigationEnd');
+          }
+        })
+      ).subscribe();
   }
 
 }

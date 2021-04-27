@@ -1,6 +1,7 @@
 section{
     margin-top: 1.5rem;
     margin-left: 1.5rem;
+    padding: 5px 1rem;
     // background-color: firebrick;
     display: flex;
     flex-flow: row wrap;
@@ -20,7 +21,24 @@ section{
 }
 
 .no-results{
-    background-color: forestgreen;
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    margin: auto;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.imagenSvg{
+    width: 500px;
+    height: 500px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+}
+
+.bordeIzquierdo {
+    border-left: 3px solid #194350;
+}
+
+div p{
+    margin-left: 40px;
 }

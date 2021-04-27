@@ -7,25 +7,26 @@
     flex-direction: row;
     align-items: center;
 }
+
 nav{
-    width: 97%;
-    height: 100%;
-    // display: block;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    // width: 97%;
+    // height: 100%;
+    display: block;
+    margin: 0 30px 0 auto;
+    font-size: 1.5rem;
+    // display: flex;
+    // justify-content: flex-end;
+    // align-items: center;
 }
 
-ul a{
-    margin-right: 24px;
+.normal{
     text-decoration: none;
-    font-size: 2rem;
     text-transform: uppercase;
     height: 100%;
-    padding: 18px 5px;
     color: #fff;
+    margin-right: 20px;
     &:hover{
-        background-color: dimgrey;
+        border-bottom: 2px solid dimgrey;
         color: #fff;
         cursor: pointer;
     }
@@ -33,6 +34,49 @@ ul a{
 
 .img{
     height:70px;
+    cursor: pointer;
     // width: 100px;
     // display: block;
+}
+
+.botonMenu{
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    background-color: #194350;
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+
+.fas{
+    font-size: 1.5rem;
+}
+
+.menu-fixed{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+// TODO falta acomodar las A para que aparezcan
+@media screen and (max-width: 500px) {
+    nav ul a{
+        display: none;
+    }
+    // .normal{
+    //     display: block;
+    // }
+    .d-flex{
+        display: flex;
+        flex-flow: column wrap;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .botonMenu{
+        display: none;
+    }
 }
