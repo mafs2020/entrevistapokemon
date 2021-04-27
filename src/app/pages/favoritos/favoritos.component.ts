@@ -3,7 +3,6 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 // seo
 import { Meta, Title } from '@angular/platform-browser';
 
-import { PokemonService } from '../services/pokemon.service';
 import { StorageService } from '../services/storage.service';
 
 import { IPokemon } from '../interfaces/interfaces';
@@ -16,7 +15,6 @@ import { IPokemon } from '../interfaces/interfaces';
 export class FavoritosComponent implements OnInit, OnDestroy {
   pokemones: IPokemon[] = [];
   constructor(
-    private pokemonServices: PokemonService,
     private storageService: StorageService,
     private title: Title,
     private meta: Meta
@@ -28,12 +26,10 @@ export class FavoritosComponent implements OnInit, OnDestroy {
 
   favoritosPokemones(){
     this.pokemones = this.storageService.get('pokemon') || [];
-    console.log(this.pokemones);
     // console.log(this.pokemones);
   }
 
   recibe(pokemon: IPokemon){
-    console.log( pokemon );
     this.pokemones = this.pokemones.filter(p => p.id !== pokemon.id);
   }
 

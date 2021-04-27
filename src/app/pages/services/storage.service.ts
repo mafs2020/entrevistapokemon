@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/member-ordering */
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
 import { IPokemon } from '../interfaces/interfaces';
 import { IStorage } from '../interfaces/IStorage';
 
@@ -26,7 +25,6 @@ export class StorageService implements IStorage {
   }
 
   delete(id: number): void {
-    console.log('id :>> ', id);
     const arrayPokemons: IPokemon[] = JSON.parse(localStorage.getItem('pokemon')) || [];
     // eslint-disable-next-line eqeqeq
     const newarrayPokemons = arrayPokemons.filter(pokemon => pokemon.id != id);

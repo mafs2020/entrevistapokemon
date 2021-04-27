@@ -8,6 +8,7 @@ import { ToastrService } from 'ngx-toastr';
 
 import { PokemonService } from './pages/services/pokemon.service';
 import { of } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -23,25 +24,27 @@ export class AppComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit(): void {
-    this.subscribeToPush();
+    // if( !this.swPush.isEnabled ){
+      this.subscribeToPush();
+    // }
   }
 
   async subscribeToPush() {
 
-    if( this.swPush.isEnabled ){
-      try {
-        const sus = await this.swPush.requestSubscription({
-          // eslint-disable-next-line @typescript-eslint/quotes
-          serverPublicKey: "BD25VIEh-70Er4eyXgi_XgqlOK9ExYd7-MNocVn4ZWVFRSl5koKERdnDlVOCuQ0C4TtcmCODwDzbagRchdgY9U4",
-        });
+    try {
+      const sus = await this.swPush.requestSubscription({
+        // eslint-disable-next-line @typescript-eslint/quotes
+        // "BD25VIEh-70Er4eyXgi_XgqlOK9ExYd7-MNocVn4ZWVFRSl5koKERdnDlVOCuQ0C4TtcmCODwDzbagRchdgY9U4";
+        serverPublicKey: environment.publicKey,
+      });
         this.pokemonServices.enviarNotificacion(sus)
         .pipe(catchError(err => {
           this.toastr.error('ocurrio un error al guardar notificacion', 'Notificacion');
           return of([]);
         })).subscribe();
-      } catch (err) {
-        console.error('Could not subscribe due to:', err);
-      }
+
+    } catch (err) {
+      console.error('Could not subscribe due to:', err);
     }
 
   }
