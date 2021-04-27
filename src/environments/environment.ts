@@ -1,10 +1,14 @@
+/* eslint-disable @typescript-eslint/quotes */
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
   production: false,
-  url: 'https://pokeapi.co/api/v2/pokemon'
+  url: 'https://pokeapi.co/api/v2/pokemon',
+
+  publicKey: "BD25VIEh-70Er4eyXgi_XgqlOK9ExYd7-MNocVn4ZWVFRSl5koKERdnDlVOCuQ0C4TtcmCODwDzbagRchdgY9U4",
+  server: "http://localhost:3000",
 };
 
 /*

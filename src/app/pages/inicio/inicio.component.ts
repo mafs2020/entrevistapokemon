@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Event, NavigationEnd, Router, RouterEvent } from '@angular/router';
 import { tap } from 'rxjs/operators';
+
 
 @Component({
   selector: 'app-inicio',

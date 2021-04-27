@@ -30,4 +30,8 @@ export class PokemonService {
     }
     localStorage.setItem('pokemon', JSON.stringify(this.pokemonesLocal));
   }
+
+  enviarNotificacion(endpoint: string): Observable<any> {
+    return this.http.post<Observable<any>>(environment.server, {endpoint});
+  }
 }
