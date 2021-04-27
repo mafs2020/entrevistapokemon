@@ -45,6 +45,7 @@ export class FavoritosComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.pokemones = [];
+
   }
 
 }
