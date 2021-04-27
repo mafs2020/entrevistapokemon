@@ -11,6 +11,7 @@ import { ToasterService } from 'angular2-toaster';
 import { ToastrService } from 'ngx-toastr';
 import { StorageService } from '../services/storage.service';
 import { Router } from '@angular/router';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-pokemon-list',
@@ -23,10 +24,13 @@ export class PokemonListComponent implements OnInit {
   constructor(
     private pokemonServices: PokemonService,
     private toastr: ToastrService,
+    private title: Title,
+    private meta: Meta
   ) {}
 
   ngOnInit(): void {
     this.getPokemon();
+    this.seo();
   }
 
   getPokemon(): void {
@@ -86,4 +90,9 @@ export class PokemonListComponent implements OnInit {
     });
   }
 
+  seo(): void {
+    this.title.setTitle('Pokemon List');
+    // MetaDefinition
+    this.meta.addTag({name:'description', content: 'lista de pokemones'});
+  }
 }
