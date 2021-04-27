@@ -1,0 +1,72 @@
+header{
+    background-color: #194350;
+    width: 100%;
+    box-shadow: 0 0 6px #194350
+}
+
+nav.contenedor{
+    height: 70px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+
+}
+nav .logo{
+    height: 70px;
+}
+
+.logo img{
+    height: 100%;
+    vertical-align: top;
+    // background: #f2f2f2;
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: 300;
+    margin-right: 20px;
+    color: #f2f2f2;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.hamburguesa{
+    height: 85%;
+    width: 60px;
+    color: #fff;
+    text-align: center;
+    display: none;
+    border: 1px solid #fff;
+    font-size: 20px;
+    border-radius: 8px;
+}
+button{
+    background-color: transparent;
+}
+@media screen and(max-width: 550px) {
+    .enlaces{
+        position: fixed;
+        // background-color: salmon;
+        background-color: dimgrey;
+        left: 0;
+        top: 70px;
+        height: 100vh;
+        width: 100vw;
+        justify-content: space-evenly;
+        align-items: center;
+        display: flex;
+        flex-flow: column wrap;
+        transform: translateX(-100%);
+        transition: all 0.7s;
+        z-index: 2;
+    }
+    .enlaces2{
+        transform: translateX(0%);
+    }
+    .hamburguesa{
+        display: block;
+    }
+}
