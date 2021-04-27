@@ -5,7 +5,7 @@ import { AfterViewInit, Component, ElementRef, OnInit, QueryList, Renderer2, Vie
   templateUrl: './header-d.component.html',
   styleUrls: ['./header-d.component.scss']
 })
-export class HeaderDComponent implements OnInit, AfterViewInit {
+export class HeaderDComponent implements OnInit {
   @ViewChild('enlaces') enlaces: ElementRef;
   @ViewChildren('as') as:  QueryList<ElementRef>;
   constructor(private render: Renderer2) { }
@@ -15,10 +15,6 @@ export class HeaderDComponent implements OnInit, AfterViewInit {
 
   abrirEnlace(): void {
     this.enlaces.nativeElement.classList.toggle('enlaces2');
-  }
-
-  ngAfterViewInit(): void{
-    this.as.forEach(e => console.log(e));
   }
 
   quitarClaseMenu(): void {

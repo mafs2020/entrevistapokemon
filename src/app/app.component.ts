@@ -30,11 +30,12 @@ export class AppComponent implements OnInit, OnDestroy {
 
     if( this.swPush.isEnabled ){
       try {
-        const { endpoint } = await this.swPush.requestSubscription({
+        const sus = await this.swPush.requestSubscription({
           // eslint-disable-next-line @typescript-eslint/quotes
           serverPublicKey: "BD25VIEh-70Er4eyXgi_XgqlOK9ExYd7-MNocVn4ZWVFRSl5koKERdnDlVOCuQ0C4TtcmCODwDzbagRchdgY9U4",
         });
-        this.pokemonServices.enviarNotificacion(endpoint).pipe(catchError(err => {
+        this.pokemonServices.enviarNotificacion(sus)
+        .pipe(catchError(err => {
           this.toastr.error('ocurrio un error al guardar notificacion', 'Notificacion');
           return of([]);
         })).subscribe();
