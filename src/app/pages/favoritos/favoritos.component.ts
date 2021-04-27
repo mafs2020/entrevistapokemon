@@ -22,6 +22,7 @@ export class FavoritosComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.favoritosPokemones();
+    this.seo();
   }
 
   favoritosPokemones(){
