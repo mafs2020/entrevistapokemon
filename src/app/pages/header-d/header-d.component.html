@@ -1,9 +1,11 @@
 <header>
     <nav class="contenedor">
-        <div class="logo"><img src="assets/img/x.svg.png" /></div>
+        <a routerLink="/">
+            <div class="logo"><img src="assets/img/x.svg.png" /></div>
+        </a>
     <div #enlaces class="enlaces">
-        <a routerLink="/">Inicio</a>
-        <a routerLink="/favoritos">Favoritos</a>
+        <a #as (click)="quitarClaseMenu()" routerLink="/">Inicio</a>
+        <a #as (click)="quitarClaseMenu()" routerLink="/favoritos">Favoritos</a>
     </div>
     <button (click)="abrirEnlace()" class="hamburguesa"><i class="fas fa-bars"></i></button>
     </nav>

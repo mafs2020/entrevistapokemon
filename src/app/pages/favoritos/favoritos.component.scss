@@ -42,3 +42,9 @@ section{
 div p{
     margin-left: 40px;
 }
+
+@media screen and (max-width: 500px) {
+    .card{
+        width: 40%;
+    }
+}
