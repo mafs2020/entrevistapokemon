@@ -1,0 +1,109 @@
+{
+  "configVersion": 1,
+  "timestamp": 1619567761578,
+  "index": "entrevitaPokemon/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "entrevitaPokemon/4.5dca560725602eac9649.js",
+        "entrevitaPokemon/favicon.ico",
+        "entrevitaPokemon/index.html",
+        "entrevitaPokemon/main.718eabb926b437ddfee7.js",
+        "entrevitaPokemon/manifest.webmanifest",
+        "entrevitaPokemon/polyfills.8c151b8375e767ff858f.js",
+        "entrevitaPokemon/runtime.28261238377616597602.js",
+        "entrevitaPokemon/styles.e18fb4ddaf0717c5655c.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "entrevitaPokemon/assets/icons/icon-128x128.png",
+        "entrevitaPokemon/assets/icons/icon-144x144.png",
+        "entrevitaPokemon/assets/icons/icon-152x152.png",
+        "entrevitaPokemon/assets/icons/icon-192x192.png",
+        "entrevitaPokemon/assets/icons/icon-384x384.png",
+        "entrevitaPokemon/assets/icons/icon-512x512.png",
+        "entrevitaPokemon/assets/icons/icon-72x72.png",
+        "entrevitaPokemon/assets/icons/icon-96x96.png",
+        "entrevitaPokemon/assets/iconsx/icon-128x128.png",
+        "entrevitaPokemon/assets/iconsx/icon-144x144.png",
+        "entrevitaPokemon/assets/iconsx/icon-152x152.png",
+        "entrevitaPokemon/assets/iconsx/icon-192x192.png",
+        "entrevitaPokemon/assets/iconsx/icon-384x384.png",
+        "entrevitaPokemon/assets/iconsx/icon-512x512.png",
+        "entrevitaPokemon/assets/iconsx/icon-72x72.png",
+        "entrevitaPokemon/assets/iconsx/icon-96x96.png",
+        "entrevitaPokemon/assets/img/nada.svg",
+        "entrevitaPokemon/assets/img/no-image.png",
+        "entrevitaPokemon/assets/img/pokeball-logo-DC23868CA1-seeklogo.com.png",
+        "entrevitaPokemon/assets/img/un.svg",
+        "entrevitaPokemon/assets/img/x.svg.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "entrevitaPokemon/4.5dca560725602eac9649.js": "c3decf79cf1ef2a47fa61232e66697f7db3b9466",
+    "entrevitaPokemon/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "entrevitaPokemon/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "entrevitaPokemon/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "entrevitaPokemon/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "entrevitaPokemon/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "entrevitaPokemon/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "entrevitaPokemon/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "entrevitaPokemon/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "entrevitaPokemon/assets/iconsx/icon-128x128.png": "846d950251e0a2001a73ed1c8dce0c48dfda640e",
+    "entrevitaPokemon/assets/iconsx/icon-144x144.png": "b32882d1b3e32c4f0477c1bce73e814f16413018",
+    "entrevitaPokemon/assets/iconsx/icon-152x152.png": "ddceba560811a78ab83226a9756a6c9363add1a7",
+    "entrevitaPokemon/assets/iconsx/icon-192x192.png": "b47768f3bedc1ffd274447e4f38eccb09ce4c206",
+    "entrevitaPokemon/assets/iconsx/icon-384x384.png": "8f9a793d85ed5b23132247b4c8926b5ba4dc3486",
+    "entrevitaPokemon/assets/iconsx/icon-512x512.png": "74298763d86cfca122b277a2963e848b79d023de",
+    "entrevitaPokemon/assets/iconsx/icon-72x72.png": "ab5761fa7a68e6d1b7191c6e4bca5b621c0d7d78",
+    "entrevitaPokemon/assets/iconsx/icon-96x96.png": "52e0940cca2f1146488df7acf89873f151737587",
+    "entrevitaPokemon/assets/img/nada.svg": "cf022d682a41672ddf243748ead74fd242f12876",
+    "entrevitaPokemon/assets/img/no-image.png": "8e73f83309ad7cb6b8aa349a444b71f32d753e65",
+    "entrevitaPokemon/assets/img/pokeball-logo-DC23868CA1-seeklogo.com.png": "3f0009fad5864c45e15a9961158634ce81028fe8",
+    "entrevitaPokemon/assets/img/un.svg": "2ee81bc543361ec09f96483f9b11733116124735",
+    "entrevitaPokemon/assets/img/x.svg.png": "120510b9d90506ca21a6a436efe6c53577822872",
+    "entrevitaPokemon/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "entrevitaPokemon/index.html": "d5be5e6042003b6a3fd6116e568056082ae07bfc",
+    "entrevitaPokemon/main.718eabb926b437ddfee7.js": "6c35ab96c30d5c4b524b6a5fdeb41b49126b5669",
+    "entrevitaPokemon/manifest.webmanifest": "4bd20db0759e47aa1cb58226aad81fbce901b62a",
+    "entrevitaPokemon/polyfills.8c151b8375e767ff858f.js": "763cd3b34dfa4600ebb9d9588ec7116988e98920",
+    "entrevitaPokemon/runtime.28261238377616597602.js": "57075c0fc04f6fde1c1e7767f2dd48e1abd1d29f",
+    "entrevitaPokemon/styles.e18fb4ddaf0717c5655c.css": "55be5b715516e1112c6e29b1740ba5b22cd64f3b"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
