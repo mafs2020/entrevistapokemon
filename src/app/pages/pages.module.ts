@@ -13,6 +13,7 @@ import { PokemonComponent } from './pokemon/pokemon.component';
 
 import { PokemonPipe } from './pipes/pokemon.pipe';
 import { HeaderDComponent } from './header-d/header-d.component';
+import { PokemonDetalleComponent } from './pokemon-detalle/pokemon-detalle.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { HeaderDComponent } from './header-d/header-d.component';
     FavoritosComponent,
     PokemonComponent,
     PokemonPipe,
-    HeaderDComponent
+    HeaderDComponent,
+    PokemonDetalleComponent
   ],
   imports: [
     CommonModule,

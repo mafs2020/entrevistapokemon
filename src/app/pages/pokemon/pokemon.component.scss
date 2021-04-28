@@ -27,6 +27,7 @@
     display: block;
     margin: 13px 0;
     transition: all 0.8 ease-in;
+    cursor: pointer;
     &:hover{
         transform: scale(1.2);
     }

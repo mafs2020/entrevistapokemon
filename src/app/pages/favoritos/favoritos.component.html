@@ -1,5 +1,5 @@
 
-<section>
+<section>    
     <ng-container *ngIf="pokemones.length; else elseBlock">
         <div class="card" *ngFor="let pokemon of pokemones">
             <app-pokemon [pokemon]="pokemon" [guardarInput]="false" (pokemonE)="recibe($event)"></app-pokemon>

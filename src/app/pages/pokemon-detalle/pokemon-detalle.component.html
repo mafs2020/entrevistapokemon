@@ -1,0 +1,32 @@
+<div *ngIf="pokemon$ | async as pokemon">
+    <section class="acomodar">
+
+        <img class="imagen" [src]="pokemon.img" [alt]="pokemon.name" (error)="pokemon.img = 'assets/img/no-image.png'">
+        <article class="articulo">
+            <div class="borde">
+                <h3 class="titulo">nombre</h3>
+                <p>{{ pokemon.name }}</p>
+            </div>
+            <div class="borde">
+                <h3 class="titulo">Experiencia:</h3>
+                <p>{{pokemon.base_experience}}</p>
+            </div>     
+
+            <div class="borde">
+                <h3 class="titulo">altura:</h3>
+                <p> {{pokemon.height}}</p>
+            </div>
+            
+            <div class="borde">
+                <h3 class="titulo">peso:</h3>
+                <p> {{pokemon.weight}}</p>
+            </div>
+            <h3 class="titulo">habilidades:</h3>
+            <div class="borde flexible">
+                <p class="ultima" *ngFor="let forma of pokemon.abilities">
+                    {{ forma.ability.name  }}
+                </p>
+            </div>
+        </article>
+    </section>
+</div>

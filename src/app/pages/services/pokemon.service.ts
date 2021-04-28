@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
 import { map, switchMap, tap } from 'rxjs/operators';
-import { IPokemon, IPokemonResponse } from '../interfaces/interfaces';
+import { IPokemon, IPokemonDetalle, IPokemonResponse } from '../interfaces/interfaces';
 import { environment } from '../.././../environments/environment';
 
 @Injectable({
@@ -29,6 +29,10 @@ export class PokemonService {
       this.pokemonesLocal = [...pokemons, pokemon];
     }
     localStorage.setItem('pokemon', JSON.stringify(this.pokemonesLocal));
+  }
+
+  getOnlyOne(id: number): Observable<IPokemonDetalle>{
+    return this.http.get<IPokemonDetalle>(`${environment.url}/${id}`);
   }
 
   enviarNotificacion(data: PushSubscription): Observable<any> {

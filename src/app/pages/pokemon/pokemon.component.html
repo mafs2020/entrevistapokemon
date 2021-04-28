@@ -6,7 +6,8 @@
     <!-- TODO cambiar funcion -->
     <!-- <div (click)="guardar()" [ngClass]="'accion'"><p><i class="fas fa-star fa-xs"></i></p></div> -->
     <div>
-        <div><img class="imagenes" loading="lazy" [src]="pokemon.img" [alt]="pokemon.name" (error)="errorImage()"></div>
+        <div><img *ngIf="!guardarInput" [routerLink]="['/detalle', pokemon.id]" class="imagenes" loading="lazy" [src]="pokemon.img" [alt]="pokemon.name" (error)="errorImage()"></div>
+        <div><img *ngIf="guardarInput" class="imagenes" loading="lazy" [src]="pokemon.img" [alt]="pokemon.name" (error)="errorImage()"></div>
         <div class="card-title">
             <p> {{ pokemon.name }} </p>
             <!-- <button class="btn success">Agregar</button> -->

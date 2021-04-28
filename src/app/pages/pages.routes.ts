@@ -1,6 +1,7 @@
 import { RouterModule, Routes } from '@angular/router';
 import { FavoritosComponent } from './favoritos/favoritos.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { PokemonDetalleComponent } from './pokemon-detalle/pokemon-detalle.component';
 import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 
 const rutas: Routes = [
@@ -9,7 +10,8 @@ const rutas: Routes = [
         component: InicioComponent,
         children: [
             { path: '', component: PokemonListComponent },
-            { path: 'favoritos', component: FavoritosComponent }
+            { path: 'favoritos', component: FavoritosComponent },
+            { path: 'detalle/:id', component: PokemonDetalleComponent }
         ]
     }
 ];
