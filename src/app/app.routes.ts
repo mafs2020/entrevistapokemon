@@ -1,7 +1,7 @@
 import { RouterModule, Routes } from '@angular/router';
 
 const rutas: Routes = [
-    { path: '', loadChildren: async () => (await import('./pages/pages.module')).PagesModule },
+    { path: 'entrevitapokemon', loadChildren: async () => (await import('./pages/pages.module')).PagesModule },
     // { path: '**', redirectTo: '/inicio' }
 ];
 
