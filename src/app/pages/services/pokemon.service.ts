@@ -15,6 +15,7 @@ export class PokemonService {
   constructor(private http: HttpClient) { }
 
   getAllPokemos(offset = 0): Observable<IPokemonResponse> {
+    console.log('no lo quiere aceptar');
     // https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png
     const urlD = `${environment.url}/?offset=${offset}&limit=20`;
     return this.http.get<IPokemonResponse>(urlD);
