@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1619567761578,
+  "timestamp": 1619569355779,
   "index": "entrevitaPokemon/index.html",
   "assetGroups": [
     {
@@ -14,7 +14,7 @@
         "entrevitaPokemon/4.5dca560725602eac9649.js",
         "entrevitaPokemon/favicon.ico",
         "entrevitaPokemon/index.html",
-        "entrevitaPokemon/main.718eabb926b437ddfee7.js",
+        "entrevitaPokemon/main.a06a7734ef58004f8838.js",
         "entrevitaPokemon/manifest.webmanifest",
         "entrevitaPokemon/polyfills.8c151b8375e767ff858f.js",
         "entrevitaPokemon/runtime.28261238377616597602.js",
@@ -80,8 +80,8 @@
     "entrevitaPokemon/assets/img/un.svg": "2ee81bc543361ec09f96483f9b11733116124735",
     "entrevitaPokemon/assets/img/x.svg.png": "120510b9d90506ca21a6a436efe6c53577822872",
     "entrevitaPokemon/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "entrevitaPokemon/index.html": "d5be5e6042003b6a3fd6116e568056082ae07bfc",
-    "entrevitaPokemon/main.718eabb926b437ddfee7.js": "6c35ab96c30d5c4b524b6a5fdeb41b49126b5669",
+    "entrevitaPokemon/index.html": "c545ceddbe4f4f41d5ac3541aca9de9b5d86885d",
+    "entrevitaPokemon/main.a06a7734ef58004f8838.js": "ddda52b27647fae61346ec43b3886e322a15ff8c",
     "entrevitaPokemon/manifest.webmanifest": "4bd20db0759e47aa1cb58226aad81fbce901b62a",
     "entrevitaPokemon/polyfills.8c151b8375e767ff858f.js": "763cd3b34dfa4600ebb9d9588ec7116988e98920",
     "entrevitaPokemon/runtime.28261238377616597602.js": "57075c0fc04f6fde1c1e7767f2dd48e1abd1d29f",
