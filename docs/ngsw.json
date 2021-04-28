@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1619575097849,
+  "timestamp": 1619576094642,
   "index": "/entrevistapokemon/index.html",
   "assetGroups": [
     {
@@ -11,13 +11,13 @@
         "ignoreVary": true
       },
       "urls": [
-        "/entrevistapokemon/4.5dca560725602eac9649.js",
+        "/entrevistapokemon/4.a901e29ca9c7f76d7244.js",
         "/entrevistapokemon/favicon.ico",
         "/entrevistapokemon/index.html",
-        "/entrevistapokemon/main.4ce6cf6c59509a2adce8.js",
+        "/entrevistapokemon/main.a06a7734ef58004f8838.js",
         "/entrevistapokemon/manifest.webmanifest",
         "/entrevistapokemon/polyfills.8c151b8375e767ff858f.js",
-        "/entrevistapokemon/runtime.28261238377616597602.js",
+        "/entrevistapokemon/runtime.d05f06c6b31b697b3480.js",
         "/entrevistapokemon/styles.e18fb4ddaf0717c5655c.css"
       ],
       "patterns": []
@@ -57,7 +57,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/entrevistapokemon/4.5dca560725602eac9649.js": "c3decf79cf1ef2a47fa61232e66697f7db3b9466",
+    "/entrevistapokemon/4.a901e29ca9c7f76d7244.js": "6cbd21601a3dc6d8b4ea060cce051578b9e35637",
     "/entrevistapokemon/assets/icons/icon-128x128.png": "846d950251e0a2001a73ed1c8dce0c48dfda640e",
     "/entrevistapokemon/assets/icons/icon-144x144.png": "b32882d1b3e32c4f0477c1bce73e814f16413018",
     "/entrevistapokemon/assets/icons/icon-152x152.png": "ddceba560811a78ab83226a9756a6c9363add1a7",
@@ -80,11 +80,11 @@
     "/entrevistapokemon/assets/img/un.svg": "2ee81bc543361ec09f96483f9b11733116124735",
     "/entrevistapokemon/assets/img/x.svg.png": "120510b9d90506ca21a6a436efe6c53577822872",
     "/entrevistapokemon/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/entrevistapokemon/index.html": "2c00d4136e366a5135daf80ded68aa3c8407abaf",
-    "/entrevistapokemon/main.4ce6cf6c59509a2adce8.js": "4579d9de537c566e1e8bb6d88e30aae65dfdc9f7",
+    "/entrevistapokemon/index.html": "c442b4c7e07230dc39ec762173c6ae66875eabbe",
+    "/entrevistapokemon/main.a06a7734ef58004f8838.js": "ddda52b27647fae61346ec43b3886e322a15ff8c",
     "/entrevistapokemon/manifest.webmanifest": "4bd20db0759e47aa1cb58226aad81fbce901b62a",
     "/entrevistapokemon/polyfills.8c151b8375e767ff858f.js": "763cd3b34dfa4600ebb9d9588ec7116988e98920",
-    "/entrevistapokemon/runtime.28261238377616597602.js": "57075c0fc04f6fde1c1e7767f2dd48e1abd1d29f",
+    "/entrevistapokemon/runtime.d05f06c6b31b697b3480.js": "c13c91077e85e5f9ab410b8b48c32e2b3c30a50b",
     "/entrevistapokemon/styles.e18fb4ddaf0717c5655c.css": "55be5b715516e1112c6e29b1740ba5b22cd64f3b"
   },
   "navigationUrls": [
